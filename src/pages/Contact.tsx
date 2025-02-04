@@ -38,13 +38,13 @@ export default function Contact() {
         <div className="max-w-lg mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
             <div className="flex items-center justify-center space-x-6 mb-8 ">
-              <a href="mailto:sylvain.perie@hotmail.fr" className="text-gray-600 hover:text-indigo-500 transition-colors dark:text-white">
+              <a href="mailto:sylvain.perie@hotmail.fr" className="text-gray-600 hover:scale-110 hover:text-blue-500 dark:hover:text-blue-500 transition-colors dark:text-white">
                 <Mail className="w-8 h-8" />
               </a>
-              <a target="_blank" href="https://github.com/Sylvecode" className="text-gray-600 dark:text-white hover:text-indigo-500 transition-colors">
+              <a target="_blank" href="https://github.com/Sylvecode" className="text-gray-600 hover:scale-110 hover:text-blue-500 dark:hover:text-blue-500 dark:text-white hover:text-indigo-500 transition-colors">
                 <Github className="w-8 h-8" />
               </a>
-              <a target="_blank" href="https://www.linkedin.com/in/sylvain-p%C3%A9ri%C3%A9-1ba98088/" className="text-gray-600 dark:text-white hover:text-indigo-500 transition-colors">
+              <a target="_blank" href="https://www.linkedin.com/in/sylvain-p%C3%A9ri%C3%A9-1ba98088/" className="hover:scale-110 hover:text-blue-500 dark:hover:text-blue-500 text-gray-600 dark:text-white hover:text-indigo-500 transition-colors">
                 <Linkedin className="w-8 h-8" />
               </a>
             </div>

@@ -14,7 +14,7 @@ function App() {
   return (
     <LanguageProvider>
       <ThemeProvider>
-        <div className="min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 transition-colors">
+        <div className="antialiased min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 transition-colors">
           <Toaster position="top-right" />
           <Navbar />
           <Routes>

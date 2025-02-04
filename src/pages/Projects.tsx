@@ -9,7 +9,7 @@ export default function Projects() {
       description:
         "A full-stack e-commerce solution built with React and Node.js",
       image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
+        "images/screen_pixhub.jpg",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
       githubUrl: "#",
       liveUrl: "#",
@@ -19,7 +19,7 @@ export default function Projects() {
       description:
         "A collaborative task management tool with real-time updates",
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800",
+        "images/screen_foot_passion.webp",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
       githubUrl: "#",
       liveUrl: "#",
@@ -29,7 +29,7 @@ export default function Projects() {
       description:
         "A weather application with detailed forecasts and interactive maps",
       image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800",
+        "images/screen_animalin.jpg",
       technologies: ["Wordpress", "Elementor"],
       githubUrl: "#",
       liveUrl: "#",
@@ -48,7 +48,7 @@ export default function Projects() {
       description:
         "A collaborative task management tool with real-time updates",
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800",
+        "images/screen_easyupload.jpg",
       technologies: ["PHP", "Javascript", "MongoDB"],
       githubUrl: "#",
       liveUrl: "#",
@@ -58,7 +58,7 @@ export default function Projects() {
       description:
         "A weather application with detailed forecasts and interactive maps",
       image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800",
+        "images/screen_pokecodes.jpg",
       technologies: ["Javascript"],
       githubUrl: "#",
       liveUrl: "#",
