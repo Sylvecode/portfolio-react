@@ -6,7 +6,7 @@ export default function Home() {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen pt-4">
+    <div className="min-h-screen pt-2">
       <header className="min-h-[calc(100vh-4rem)] flex items-center justify-center text-white">
         <div className="container mx-auto px-6 py-24 text-center">
           <div className="mb-8 text-2xl md:text-3xl"></div>

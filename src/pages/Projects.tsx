@@ -8,18 +8,16 @@ export default function Projects() {
       title: "Pixhub",
       description:
         "A full-stack e-commerce solution built with React and Node.js",
-      image:
-        "images/screen_pixhub.jpg",
+      image: "images/screen_pixhub.jpg",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Sylvecode/PixhubAndroid",
       liveUrl: "#",
     },
     {
       title: "Foot Passion",
       description:
         "A collaborative task management tool with real-time updates",
-      image:
-        "images/screen_foot_passion.webp",
+      image: "images/screen_foot_passion.webp",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
       githubUrl: "#",
       liveUrl: "#",
@@ -28,8 +26,7 @@ export default function Projects() {
       title: "Animalin",
       description:
         "A weather application with detailed forecasts and interactive maps",
-      image:
-        "images/screen_animalin.jpg",
+      image: "images/screen_animalin.jpg",
       technologies: ["Wordpress", "Elementor"],
       githubUrl: "#",
       liveUrl: "#",
@@ -47,8 +44,7 @@ export default function Projects() {
       title: "EasyUpload",
       description:
         "A collaborative task management tool with real-time updates",
-      image:
-        "images/screen_easyupload.jpg",
+      image: "images/screen_easyupload.jpg",
       technologies: ["PHP", "Javascript", "MongoDB"],
       githubUrl: "#",
       liveUrl: "#",
@@ -57,8 +53,7 @@ export default function Projects() {
       title: "PokeCodes",
       description:
         "A weather application with detailed forecasts and interactive maps",
-      image:
-        "images/screen_pokecodes.jpg",
+      image: "images/screen_pokecodes.jpg",
       technologies: ["Javascript"],
       githubUrl: "#",
       liveUrl: "#",
@@ -99,6 +94,7 @@ export default function Projects() {
                 </div>
                 <div className="flex space-x-4 ">
                   <a
+                    target="_blank"
                     href={project.githubUrl}
                     className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
                   >
@@ -106,6 +102,7 @@ export default function Projects() {
                     Code
                   </a>
                   <a
+                    target="_blank"
                     href={project.liveUrl}
                     className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
                   >
