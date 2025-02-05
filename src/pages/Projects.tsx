@@ -1,62 +1,63 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Ellipsis } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   const { t } = useLanguage();
   const projects = [
     {
       title: "Pixhub",
-      description:
-        "A full-stack e-commerce solution built with React and Node.js",
+      description: t("pixhubDescription"),
       image: "images/screen_pixhub.jpg",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
       githubUrl: "https://github.com/Sylvecode/PixhubAndroid",
       liveUrl: "#",
+      details: "/pixhub",
     },
     {
       title: "Foot Passion",
-      description:
-        "A collaborative task management tool with real-time updates",
+      description: t("footpassionDescription"),
       image: "images/screen_foot_passion.webp",
       technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Sylvecode/FootPassion",
       liveUrl: "#",
+      details: "/footpassion",
     },
     {
       title: "Animalin",
-      description:
-        "A weather application with detailed forecasts and interactive maps",
+      description: t("animalinDescription"),
       image: "images/screen_animalin.jpg",
       technologies: ["Wordpress", "Elementor"],
       githubUrl: "#",
       liveUrl: "#",
+      details: "/animalin",
     },
     {
       title: "Frequencies",
-      description:
-        "A full-stack e-commerce solution built with React and Node.js",
+      description: t("frequenciesDescription"),
       image: "/images/screen_frequencies.jpg",
       technologies: ["React", "Typescript", "Tailwind CSS"],
       githubUrl: "#",
       liveUrl: "https://frequencies.fr/",
+      details: "/frequencies",
     },
     {
       title: "EasyUpload",
-      description:
-        "A collaborative task management tool with real-time updates",
+      description: t("easyuploadDescription"),
       image: "images/screen_easyupload.jpg",
       technologies: ["PHP", "Javascript", "MongoDB"],
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/Sylvecode/EasyUpload",
+      liveUrl: "https://easyupload.jedeploiemonappli.com/",
+      details: "/easyupload",
     },
     {
       title: "PokeCodes",
-      description:
-        "A weather application with detailed forecasts and interactive maps",
+      description: t("pokecodesDescription"),
       image: "images/screen_pokecodes.jpg",
       technologies: ["Javascript"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Sylvecode/PokeCodes",
       liveUrl: "#",
+      details: "/pokecodes",
     },
   ];
 
@@ -109,6 +110,13 @@ export default function Projects() {
                     <ExternalLink size={20} className="mr-1" />
                     Live Demo
                   </a>
+                  <Link
+                    to={project.details}
+                    className="flex flex-row space-x-4"
+                  >
+                    <Ellipsis />
+                    {t("details")}
+                  </Link>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ export default function Skills() {
     {
       title: "Frontend Development",
       icon: <Layout className="w-8 h-8 text-indigo-600" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "React", "Kotlin", "Tailwind CSS", "Responsive Design"]
+      skills: ["HTML5", "CSS3", "JavaScript", "React", "Kotlin", "Bootstrap", "Tailwind CSS", "Responsive Design"]
     },
     {
       title: "Backend Development",
@@ -22,7 +22,7 @@ export default function Skills() {
     {
       title: "Other Skills",
       icon: <Code2 className="w-8 h-8 text-indigo-600" />,
-      skills: ["Git", "Agile Methodology"]
+      skills: ["Git", "Agile Methodology","Figma"]
     }
   ];
 

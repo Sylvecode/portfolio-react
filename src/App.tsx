@@ -9,6 +9,12 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+import Pixhub from './pages/Pixhub';
+import FootPassion from './pages/FootPassion';
+import Animalin from './pages/Animalin';
+import Frequencies from './pages/Frequencies';
+import EasyUpload from './pages/EasyUpload';
+import PokeCodes from './pages/PokeCodes';
 
 function App() {
   return (
@@ -23,6 +29,12 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/pixhub" element={<Pixhub />} />
+            <Route path="/footpassion" element={<FootPassion />} />
+            <Route path="/animalin" element={<Animalin />} />
+            <Route path="/frequencies" element={<Frequencies />} />
+            <Route path="/easyupload" element={<EasyUpload />} />
+            <Route path="/pokecodes" element={<PokeCodes />} />
           </Routes>
           <Footer />
         </div>
