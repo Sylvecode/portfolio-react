@@ -1,7 +1,9 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function EasyUpload() {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-6 py-24">
@@ -11,7 +13,7 @@ export default function EasyUpload() {
             className="flex flex-row gap-3 text-gray-900 dark:text-white"
           >
             <ArrowLeft size={22} className="text-gray-600 dark:text-white" />
-            Retour projets
+            {t("backtoprojects")}
           </Link>
         </div>
         <h1 className="text-4xl font-bold mb-12 text-center text-black dark:text-white ">

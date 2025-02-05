@@ -75,6 +75,18 @@ export default function Contact() {
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
                 />
               </div>
+
+              <div>
+                <label htmlFor="user_email" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
+                  Objet
+                </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="user_email"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                />
+              </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
