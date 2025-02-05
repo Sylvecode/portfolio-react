@@ -15,7 +15,6 @@
 
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
-  will-change: transform, opacity;
 }
 
 .imgSylv {
