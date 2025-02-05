@@ -1,5 +1,6 @@
 import { Code2, Database, Layout, Server } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import TypeWriter from '../components/TypeWriter';
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -29,10 +30,10 @@ export default function Skills() {
   return (
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-6 py-24">
-        <h1 className="text-4xl font-bold mb-12 text-center text-black dark:text-gray-100">{t('techSkills')}</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <h1 className="text-4xl font-bold mb-12 text-center text-black dark:text-gray-100"><TypeWriter text={t("techSkills")} /></h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+            <div key={index} className="animate-fade-in rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
               <div className="flex items-center mb-6">
                 {category.icon}
                 <h2 className="text-2xl font-bold ml-4 text-black dark:text-gray-100">{category.title}</h2>

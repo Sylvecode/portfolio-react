@@ -16,7 +16,7 @@ export default function Home() {
               <img
                 src="/images/profile_pic_sylvain.jpg"
                 alt="Sylvain Périé"
-                className="antialiased imgSylv w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-[50%_20%] border-4 border-white shadow-xl relative z-10"
+                className="antialiased imgSylv w-32 h-32 md:w-60 md:h-60 sm:w-32 sm:h-32 rounded-full object-cover object-[50%_20%] border-4 border-white shadow-xl relative z-10"
               />
             </div>
           </div>

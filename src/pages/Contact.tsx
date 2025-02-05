@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import { useLanguage } from '../context/LanguageContext';
+import TypeWriter from '../components/TypeWriter';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -34,8 +35,8 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-6 py-24">
-        <h1 className="text-4xl font-bold text-center mb-16 text-black dark:text-white">Contactez-moi</h1>
-        <div className="max-w-lg mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-16 text-black dark:text-white"><TypeWriter text={t("contactMe")} /></h1>
+        <div className="max-w-lg mx-auto animate-fade-in">
           <div className="bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
             <div className="flex items-center justify-center space-x-6 mb-8 ">
               <a href="mailto:sylvain.perie@hotmail.fr" className="text-gray-600 hover:scale-110 hover:text-blue-500 dark:hover:text-blue-500 transition-colors dark:text-white">
