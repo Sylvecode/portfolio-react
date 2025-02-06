@@ -23,11 +23,11 @@ export default function Contact() {
       );
 
       if (result.text === "OK") {
-        toast.success("Message sent successfully!");
+        toast.success(t("sendEmailStatus")[0]);
         formRef.current.reset();
       }
     } catch (error) {
-      toast.error("Failed to send message. Please try again.");
+      toast.error(t("sendEmailStatus")[1]);
       console.error("EmailJS Error:", error);
     }
   };
