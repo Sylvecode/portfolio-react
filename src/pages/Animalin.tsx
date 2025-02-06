@@ -10,9 +10,12 @@ export default function Animalin() {
         <div className="">
           <Link
             to="/projects"
-            className="flex flex-row gap-3 text-gray-900 dark:text-white"
+            className="group flex flex-row gap-3 text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-600"
           >
-            <ArrowLeft size={22} className="text-gray-600 dark:text-white" />
+            <ArrowLeft
+              size={22}
+              className="text-inherit group-hover:text-inherit"
+            />
             {t("backtoprojects")}
           </Link>
         </div>

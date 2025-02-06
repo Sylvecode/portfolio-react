@@ -10,9 +10,12 @@ export default function Pixhub() {
         <div className="">
           <Link
             to="/projects"
-            className="flex flex-row gap-3 text-gray-900 dark:text-white"
+            className="group flex flex-row gap-3 text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-600"
           >
-            <ArrowLeft size={22} className="text-gray-600 dark:text-white" />
+            <ArrowLeft
+              size={22}
+              className="text-inherit group-hover:text-inherit"
+            />
             {t("backtoprojects")}
           </Link>
         </div>
@@ -24,15 +27,17 @@ export default function Pixhub() {
           <div className="prose prose-lg text-black dark:text-white">
             <p className="mb-6 ">Pixhub</p>
             <p className="mb-6">
-              My journey in web development started with a deep curiosity about
-              how things work on the internet. This led me to pursue formal
-              education in web development, where I honed my skills in modern
-              technologies and best practices.
+              Pixhub est une application mobile android développée en Kotlin qui
+              propose un calendrier de films, séries, jeux vidéos, anime au sein
+              d'une même application. L'utilisateur aura, à terme, la
+              possibilité de tracker la sortie d'une oeuvre, de la noter,
+              ajouter des contacts et intéragir avec eux.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing my knowledge with
-              the developer community.
+              Ce projet est découpé en deux parties, un client, qui fait appel à
+              un webservice pour les insertions en base de données. Ce choix a
+              été fait dans l'optique de développer ultérieurement une version
+              web qui réutiliserait ce même webservice.
             </p>
           </div>
         </div>
