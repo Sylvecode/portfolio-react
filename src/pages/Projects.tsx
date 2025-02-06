@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiJavascript } from "react-icons/si";
+import { FaPhp } from "react-icons/fa";
+import { BiLogoMongodb } from "react-icons/bi";
+import { FaWordpress } from "react-icons/fa";
+import { FaElementor } from "react-icons/fa6";
+import { TbBrandKotlin } from "react-icons/tb";
+import { SiJetpackcompose } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+
 import TypeWriter from "../components/TypeWriter";
 
 export default function Projects() {
@@ -13,7 +23,12 @@ export default function Projects() {
       title: "Pixhub",
       description: t("pixhubDescription"),
       image: "images/screen_pixhub.jpg",
-      technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
+      technologies: [
+        { icon: <TbBrandKotlin className="m-1 size-8 text-blue-600" />, name: "Kotlin" },
+        { icon: <SiJetpackcompose className="m-1 size-8 text-blue-600 " />, name: "Jetpack Compose" },
+        { icon: <BiLogoSpringBoot className="m-1 size-8 text-green-500" />, name: "Springboot" },
+        { icon: <GrMysql className="m-1 size-8 text-blue-600" />, name: "MySQL" }
+      ],
       githubUrl: "https://github.com/Sylvecode/PixhubAndroid",
       liveUrl: "#",
       details: "/pixhub",
@@ -22,7 +37,12 @@ export default function Projects() {
       title: "Foot Passion",
       description: t("footpassionDescription"),
       image: "images/screen_foot_passion.webp",
-      technologies: ["Kotlin", "JetPack Compose", "Springboot", "MySQL"],
+      technologies: [
+        { icon: <TbBrandKotlin className="m-1 size-8 text-blue-600" />, name: "Kotlin" },
+        { icon: <SiJetpackcompose className="m-1 size-8 text-blue-600 " />, name: "Jetpack Compose" },
+        { icon: <BiLogoSpringBoot className="m-1 size-8 text-green-500" />, name: "Springboot" },
+        { icon: <GrMysql className="m-1 size-8 text-blue-600" />, name: "MySQL" }
+      ],
       githubUrl: "https://github.com/Sylvecode/FootPassion",
       liveUrl: "#",
       details: "/footpassion",
@@ -31,7 +51,10 @@ export default function Projects() {
       title: "Animalin",
       description: t("animalinDescription"),
       image: "images/screen_animalin.jpg",
-      technologies: ["Wordpress", "Elementor"],
+      technologies: [
+        { icon: <FaWordpress className="m-1 size-8 text-blue-600" />, name: "Wordpress" },
+        { icon: <FaElementor className="m-1 size-8 text-blue-600 " />, name: "Elementor" },
+      ],
       githubUrl: "#",
       liveUrl: "#",
       details: "/animalin",
@@ -41,9 +64,9 @@ export default function Projects() {
       description: t("frequenciesDescription"),
       image: "/images/screen_frequencies.jpg",
       technologies: [
-        <FaReact className="m-1 size-6" />,
-        <BiLogoTypescript className="m-1 size-6" />,
-        <RiTailwindCssFill className="m-1 size-6" />,
+        { icon: <FaReact className="m-1 size-8 text-blue-600" />, name: "React" },
+        { icon: <BiLogoTypescript className="m-1 size-8 text-blue-600 " />, name: "Typescript" },
+        { icon: <RiTailwindCssFill className="m-1 size-8 text-blue-600" />, name: "Tailwind CSS" },
       ],
       githubUrl: "#",
       liveUrl: "https://frequencies.fr/",
@@ -53,7 +76,11 @@ export default function Projects() {
       title: "EasyUpload",
       description: t("easyuploadDescription"),
       image: "images/screen_easyupload.jpg",
-      technologies: ["PHP", "Javascript", "MongoDB"],
+      technologies: [
+        { icon: <FaPhp className="m-1 size-8 text-blue-600" />, name: "PHP" },
+        { icon: <SiJavascript className="m-1 size-8 text-blue-600 " />, name: "Javascript" },
+        { icon: <BiLogoMongodb className="m-1 size-8 text-green-600" />, name: "MongoDB" },
+      ],
       githubUrl: "https://github.com/Sylvecode/EasyUpload",
       liveUrl: "https://easyupload.jedeploiemonappli.com/",
       details: "/easyupload",
@@ -61,8 +88,10 @@ export default function Projects() {
     {
       title: "PokeCodes",
       description: t("pokecodesDescription"),
-      image: "images/screen_pokecodes.jpg",
-      technologies: ["Javascript"],
+      image: "images/screen_pokecodes3.png",
+      technologies: [
+        { icon: <SiJavascript className="m-1 size-7 text-yellow-300" />, name: "Javascript" },
+      ],
       githubUrl: "https://github.com/Sylvecode/PokeCodes",
       liveUrl: "#",
       details: "/pokecodes",
@@ -85,21 +114,21 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48"
               />
               <div className="p-6">
                 <h3 className="text-xl text-black dark:text-white font-bold mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-4 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 text-blue-600 dark:text-white rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
+                    <div key={techIndex} className="flex flex-col items-center">
+                      {tech.icon} 
+                      <span className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                        {tech.name}
+                      </span>
+                    </div>
                   ))}
                 </div>
                 <div className="flex space-x-4">
