@@ -16,10 +16,10 @@ export default function Contact() {
 
     try {
       const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        formRef.current,
-        'YOUR_PUBLIC_KEY'
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,   
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,   
+        formRef.current,                             
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY     
       );
 
       if (result.text === 'OK') {
@@ -53,7 +53,7 @@ export default function Contact() {
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="user_name" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
-                  Name
+                {t("contactFormInfo")[0]}
                 </label>
                 <input
                   type="text"
@@ -66,7 +66,7 @@ export default function Contact() {
               
               <div>
                 <label htmlFor="user_email" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
-                  Email
+                {t("contactFormInfo")[1]}
                 </label>
                 <input
                   type="email"
@@ -78,20 +78,20 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="user_email" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
-                  Objet
+                <label htmlFor="user_subject" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
+                {t("contactFormInfo")[2]}
                 </label>
                 <input
-                  type="email"
-                  name="user_email"
-                  id="user_email"
+                  type="text"
+                  name="user_subject"
+                  id="user_subject"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
                 />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-100">
-                  Message
+                {t("contactFormInfo")[3]}
                 </label>
                 <textarea
                   name="message"
