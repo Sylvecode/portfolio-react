@@ -63,26 +63,6 @@ export default function Pixhub() {
                 ultérieurement une version web qui réutiliserait ce même web
                 service.
               </p>
-              <div className="flex flex-row object-fit justify-center m-10 gap-10">
-                <div className="flex flex-col">
-                  <img
-                    src="gif/screen2_pixhub.gif"
-                    className="h-100 w-60 rounded-md border border-black dark:border-gray-200"
-                  ></img>
-                  <p className="flex justify-center m-4">
-                    Création de compte & connexion
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <img
-                    src="gif/screen_pixhub.gif"
-                    className="h-100 w-60 rounded-md border border-black dark:border-gray-200"
-                  ></img>
-                  <p className="flex justify-center m-4">
-                    Caroussel des sorties
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           <div className="max-w-3xl mx-auto h-fit bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 ml-4">
@@ -143,6 +123,37 @@ export default function Pixhub() {
                 <AiFillClockCircle className="ml-2 text-gray-600 dark:gray-600" />
               </div>
             </ul>
+          </div>
+        </div>
+        <div className="flex mx-auto m-10 justify-center h-fit bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-full max-w-screen-lg overflow-hidden">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-10">
+            {[
+              {
+                src: "gif/screen_pixhub2.gif",
+                text: "Création de compte & connexion",
+              },
+              {
+                src: "gif/screen_pixhub.gif",
+                text: "Carrousel des sorties",
+              },
+              {
+                src: "gif/screen_pixhub3.gif",
+                text: "Page film & Artiste",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center min-w-[150px] sm:w-60 h-auto gap-4"
+              >
+                <img
+                  src={item.src}
+                  className="rounded-md border border-gray-700 dark:border-gray-700 w-full h-auto object-contain"
+                />
+                <p className="text-black dark:text-white text-center">
+                  {item.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
