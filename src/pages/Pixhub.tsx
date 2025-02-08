@@ -10,7 +10,7 @@ export default function Pixhub() {
   return (
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-6 py-24">
-        <div className="">
+        <div className="mb-5">
           <Link
             to="/projects"
             className="group flex flex-row gap-3 text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-600"
@@ -23,11 +23,11 @@ export default function Pixhub() {
           </Link>
         </div>
 
-        <h1 className="text-4xl font-bold mb-12 text-center text-black dark:text-white ">
+        <h1 className="text-4xl font-bold mb-14 text-center text-black dark:text-white ">
           <TypeWriter text="Pixhub" />
         </h1>
-        <div className="flex flex-row">
-          <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+        <div className="flex flex-row flex-wrap justify-center w-full gap-8">
+          <div className="max-w-3xl bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
             <div className="prose prose-lg text-black dark:text-white">
               <p className="mb-6 justify-center">
                 Status: En cours de développement
@@ -36,9 +36,7 @@ export default function Pixhub() {
               <p className="mb-6 italic">
                 Pixhub est une application mobile android développée en Kotlin
                 qui propose un calendrier de films, séries, jeux vidéos, anime
-                au sein d'une même application. L'utilisateur aura, à terme, la
-                possibilité de tracker la sortie d'une oeuvre, de la noter,
-                ajouter des contacts et intéragir avec eux.
+                au sein d'une même application.
               </p>
               <p className="mb-6">
                 Ce projet est composé de deux parties distinctes :{" "}
@@ -65,7 +63,7 @@ export default function Pixhub() {
               </p>
             </div>
           </div>
-          <div className="max-w-3xl mx-auto h-fit bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 ml-4">
+          <div className="max-w-3xl h-fit bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 ml-1">
             <p className="text-black dark:text-white">Fonctionnalités</p>
             <ul className="m-2">
               <div className="mb-1 flex flex-row justify-between">
@@ -125,7 +123,7 @@ export default function Pixhub() {
             </ul>
           </div>
         </div>
-        <div className="flex mx-auto m-10 justify-center h-fit bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-full max-w-screen-lg overflow-hidden">
+        <div className="flex mx-auto m-10 justify-center h-fit bg-white rounded-lg shadow-lg p-10 pb-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-full max-w-screen-lg overflow-hidden">
           <div className="flex flex-wrap justify-center gap-4 md:gap-10">
             {[
               {

@@ -13,7 +13,7 @@ export default function Skills() {
     {
       title: "Backend Development",
       icon: <Server className="w-8 h-8 text-indigo-600" />,
-      skills: ["PHP", "Laravel", "Springboot", "RESTful APIs"]
+      skills: ["PHP", "Laravel", "Spring Boot", "RESTful APIs"]
     },
     {
       title: "Database",

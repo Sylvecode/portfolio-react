@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Pixhub",
       description: t("pixhubDescription"),
-      image: "images/screen_pixhub.jpg",
+      image: "images/pixhub_pic.png",
       technologies: [
         {
           icon: <TbBrandKotlin className="m-1 size-8 text-blue-600" />,
