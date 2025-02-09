@@ -28,11 +28,11 @@ export default function Projects() {
           name: "Kotlin",
         },
         {
-          icon: <SiJetpackcompose className="m-1 size-8 text-blue-600 " />,
+          icon: <SiJetpackcompose className="m-1 size-8 text-blue-600" />,
           name: "Jetpack Compose",
         },
         {
-          icon: <BiLogoSpringBoot className="m-1 size-8 text-green-500" />,
+          icon: <BiLogoSpringBoot className="m-1 size-8 text-blue-600" />,
           name: "Spring Boot",
         },
         {
@@ -58,7 +58,7 @@ export default function Projects() {
           name: "Jetpack Compose",
         },
         {
-          icon: <BiLogoSpringBoot className="m-1 size-8 text-green-500" />,
+          icon: <BiLogoSpringBoot className="m-1 size-8 text-blue-600" />,
           name: "Spring Boot",
         },
         {
@@ -121,7 +121,7 @@ export default function Projects() {
           name: "Javascript",
         },
         {
-          icon: <BiLogoMongodb className="m-1 size-8 text-green-600" />,
+          icon: <BiLogoMongodb className="m-1 size-8 text-blue-600" />,
           name: "MongoDB",
         },
       ],
@@ -135,7 +135,7 @@ export default function Projects() {
       image: "images/screen_pokecodes3.png",
       technologies: [
         {
-          icon: <SiJavascript className="m-1 size-7 text-yellow-300" />,
+          icon: <SiJavascript className="m-1 size-7 text-blue-600" />,
           name: "Javascript",
         },
       ],
