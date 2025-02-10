@@ -1,4 +1,4 @@
-import { ArrowLeft, Github } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { AiFillClockCircle } from "react-icons/ai";
@@ -115,55 +115,55 @@ export default function Pixhub() {
             <p className="text-black dark:text-white">Fonctionnalités</p>
             <ul className="m-2">
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-lime-700 dark:text-lime-600">
+                <li className="text-lime-700 dark:text-lime-600 mr-3">
                   Créer un compte
                 </li>
                 <AiFillCheckCircle className="ml-2 text-lime-700 dark:text-lime-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-lime-700 dark:text-lime-600">
+                <li className="text-lime-700 dark:text-lime-600 mr-3">
                   Se connecter
                 </li>
                 <AiFillCheckCircle className="ml-2 text-lime-700 dark:text-lime-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-lime-700 dark:text-lime-600">
+                <li className="text-lime-700 dark:text-lime-600 mr-3">
                   Consulter les sorties films du mois
                 </li>
                 <AiFillCheckCircle className="ml-2 text-lime-700 dark:text-lime-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-lime-700 dark:text-lime-600">
+                <li className="text-lime-700 dark:text-lime-600 mr-3">
                   Consulter un film
                 </li>
                 <AiFillCheckCircle className="text-lime-700 dark:text-lime-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-lime-700 dark:text-lime-600">
+                <li className="text-lime-700 dark:text-lime-600 mr-3">
                   Consulter un acteur
                 </li>
                 <AiFillCheckCircle className="ml-2 text-lime-700 dark:text-lime-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-gray-600 dark:gray-600">
+                <li className="text-gray-600 dark:gray-600 mr-3">
                   Consulter les sorties séries du mois
                 </li>
                 <AiFillClockCircle className="ml-2 text-gray-600 dark:gray-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-gray-600 dark:gray-600">
+                <li className="text-gray-600 dark:gray-600 mr-3">
                   Consulter une série
                 </li>
                 <AiFillClockCircle className="ml-2 text-gray-600 dark:gray-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-gray-600 dark:gray-600">
+                <li className="text-gray-600 dark:gray-600 mr-3">
                   Consulter les sorties jeux vidéos du mois
                 </li>
                 <AiFillClockCircle className="ml-2 text-gray-600 dark:gray-600" />
               </div>
               <div className="mb-1 flex flex-row justify-between">
-                <li className="text-gray-600 dark:gray-600">
+                <li className="text-gray-600 dark:gray-600 mr-3">
                   Consulter un jeu vidéo
                 </li>
                 <AiFillClockCircle className="ml-2 text-gray-600 dark:gray-600" />
