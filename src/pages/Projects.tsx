@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiWoo } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaWordpress } from "react-icons/fa";
@@ -83,9 +83,13 @@ export default function Projects() {
           icon: <FaElementor className="m-1 size-8 text-blue-600 " />,
           name: "Elementor",
         },
+        {
+          icon: <SiWoo className="m-1 size-8 text-blue-600 " />,
+          name: "Woo Commerce",
+        },
       ],
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "",
+      liveUrl: "",
       details: "/animalin",
     },
     {
@@ -178,23 +182,29 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="flex space-x-4">
-                  <a
-                    target="_blank"
-                    href={project.githubUrl}
-                    className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
-                  >
-                    <Github size={20} className="mr-1" />
-                    Code
-                  </a>
-                  <a
-                    target="_blank"
-                    href={project.liveUrl}
-                    className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
-                  >
-                    <ExternalLink size={20} className="mr-1" />
-                    Live Demo
-                  </a>
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-4">
+                    {project.githubUrl && (
+                      <a
+                        target="_blank"
+                        href={project.githubUrl}
+                        className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
+                      >
+                        <Github size={20} className="mr-1" />
+                        Code
+                      </a>
+                    )}
+                    {project.liveUrl && (
+                      <a
+                        target="_blank"
+                        href={project.liveUrl}
+                        className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
+                      >
+                        <ExternalLink size={20} className="mr-1" />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                   <Link
                     to={project.details}
                     className="flex flex-row space-x-4 text-gray-600 hover:text-indigo-600 transition-colors"
