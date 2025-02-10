@@ -141,16 +141,8 @@ export default function FootPassion() {
           <div className="flex flex-wrap justify-center gap-4 md:gap-10">
             {[
               {
-                src: "gif/screen_pixhub2.gif",
-                text: "Création de compte & connexion",
-              },
-              {
-                src: "gif/screen_pixhub.gif",
-                text: "Carrousel des sorties",
-              },
-              {
-                src: "gif/screen_pixhub3.gif",
-                text: "Page film & Artiste",
+                src: "gif/footpassion.gif",
+                text: "Demo",
               },
             ].map((item, index) => (
               <div

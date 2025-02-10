@@ -47,7 +47,7 @@ export default function Projects() {
     {
       title: "Foot Passion",
       description: t("footpassionDescription"),
-      image: "images/screen_foot_passion.webp",
+      image: "images/screen_footpassion.png",
       technologies: [
         {
           icon: <TbBrandKotlin className="m-1 size-8 text-blue-600" />,
@@ -161,7 +161,7 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48"
+                className="w-full h-48 object-fit"
               />
               <div className="p-6">
                 <h3 className="text-xl text-black dark:text-white font-bold mb-2">
