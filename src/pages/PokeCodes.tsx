@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import TypeWriter from "../components/TypeWriter";
 import { IoLogoGithub } from "react-icons/io";
-import { SiJavascript } from "react-icons/si";
 
 export default function PokeCodes() {
   const { t } = useLanguage();
