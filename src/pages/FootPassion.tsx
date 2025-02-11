@@ -1,7 +1,6 @@
-import { ArrowLeft} from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AiFillCheckCircle } from "react-icons/ai";
-import { AiFillClockCircle } from "react-icons/ai";
 import { useLanguage } from "../context/LanguageContext";
 import TypeWriter from "../components/TypeWriter";
 import { TbBrandKotlin } from "react-icons/tb";
@@ -36,12 +35,11 @@ export default function FootPassion() {
           <div className="max-w-3xl bg-white rounded-lg shadow-lg p-8 dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
             <div className="prose prose-lg text-black dark:text-white">
               <p className="mb-8 mt-4 italic">
-                Foot Passion est une application mobile android développée en Kotlin
-                qui permet de créer un match, mettre à jour le score, finaliser le match, et consulter les matches terminés.
+                Foot Passion est une application mobile android développée en
+                Kotlin qui permet de créer un match, mettre à jour le score,
+                finaliser le match, et consulter les matches terminés.
               </p>
-              <p className="mb-8 justify-center">
-                Status : Terminé
-              </p>
+              <p className="mb-8 justify-center">Status : Terminé</p>
               <p className="mb-8 ">Architecture : MVVM</p>
 
               <p className="">Stack :</p>
@@ -74,7 +72,7 @@ export default function FootPassion() {
                 <div className="flex flex-row items-center mb-6">
                   <a
                     target="_blank"
-                    href="https://github.com/Sylvecode/PixhubAndroid"
+                    href="https://github.com/Sylvecode/FootPassion"
                   >
                     <IoLogoGithub className="w-8 h-8 mr-5 flex-shrink-0 hover:text-indigo-600" />
                   </a>
@@ -88,7 +86,7 @@ export default function FootPassion() {
                 <div className="flex flex-row items-center mb-8">
                   <a
                     target="_blank"
-                    href="https://github.com/Sylvecode/PixhubAPI"
+                    href="https://github.com/Sylvecode/FootPassionAPI"
                   >
                     <IoLogoGithub className="w-8 h-8 mr-5 flex-shrink-0 hover:text-indigo-600" />
                   </a>
@@ -103,7 +101,7 @@ export default function FootPassion() {
               </div>
               <p>
                 L'API repose sur Spring Boot, et l'accès aux données est
-                facilité par Spring Data JPA et Hibernate. 
+                facilité par Spring Data JPA et Hibernate.
               </p>
             </div>
           </div>

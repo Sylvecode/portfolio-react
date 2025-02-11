@@ -6,7 +6,6 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript, SiWoo } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
-import { BiLogoMongodb } from "react-icons/bi";
 import { FaWordpress } from "react-icons/fa";
 import { FaElementor } from "react-icons/fa6";
 import { TbBrandKotlin } from "react-icons/tb";
@@ -14,6 +13,8 @@ import { SiJetpackcompose } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import TypeWriter from "../components/TypeWriter";
+import { DiSqllite } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
 
 export default function Projects() {
   const { t } = useLanguage();
@@ -109,6 +110,10 @@ export default function Projects() {
           icon: <RiTailwindCssFill className="m-1 size-8 text-blue-600" />,
           name: "Tailwind CSS",
         },
+        {
+          icon: <IoLogoFirebase className="m-1 size-8 text-blue-600" />,
+          name: "Firebase",
+        },
       ],
       githubUrl: "#",
       liveUrl: "https://frequencies.fr/",
@@ -125,8 +130,8 @@ export default function Projects() {
           name: "Javascript",
         },
         {
-          icon: <BiLogoMongodb className="m-1 size-8 text-blue-600" />,
-          name: "MongoDB",
+          icon: <DiSqllite className="m-1 size-8 text-blue-600" />,
+          name: "SQLite",
         },
       ],
       githubUrl: "https://github.com/Sylvecode/EasyUpload",

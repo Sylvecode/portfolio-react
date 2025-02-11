@@ -20,7 +20,7 @@ const translations = {
     pixhubDescription:'Application mobile calendrier Films, Séries, Jeux vidéos',
     footpassionDescription:'Application mobile de gestion de matches de football',
     animalinDescription:'Boutique en ligne fictive de vente de chiens et chats de race',
-    frequenciesDescription:'Participation au développement du site Frequencies',
+    frequenciesDescription:'Participation au développement du site de l\'association Frequencies',
     easyuploadDescription:'Participation au projet open source EasyUpload, site de transfert de fichiers',
     pokecodesDescription:'Bot Discord affichant les codes pokémon actuellement en distribution. Script Javascript de webscrapping',
     rights: 'Tous droits réservés',
