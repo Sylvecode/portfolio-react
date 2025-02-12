@@ -114,7 +114,7 @@ export default function Navbar() {
               >
                 {t("contact")}
               </Link>
-              <LanguageSelector/>
+              <LanguageSelector />
               <ThemeToggle />
             </div>
           </div>
