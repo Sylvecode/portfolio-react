@@ -11,8 +11,8 @@ RUN npm install
 # Copier tout le code du projet
 COPY . .
 
-# Exposer le bon port pour Vite (par défaut, c'est 5173)
-EXPOSE 5173
+# Exposer le bon port pour Vite
+EXPOSE 5174
 
-# Démarrer l'application en mode dev, avec --host pour rendre accessible
-CMD ["npm", "run", "dev", "--", "--host"]
+# Démarrer l'application en mode dev sur le port 5174
+CMD ["npm", "run", "dev", "--", "--port=5174", "--host"]
