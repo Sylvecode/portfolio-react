@@ -22,7 +22,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-4">
             {/* Desktop menu */}
-            <div className="hidden md:flex space-x-10">
+            <div className="hidden lg:flex space-x-10">
               <Link
                 to="/"
                 className="font-bold font-sans text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
@@ -58,7 +58,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden"
+              className="lg:hidden"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -69,7 +69,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden sm:hidden lg:flex space-x-8">
             <LanguageSelector />
             <ThemeToggle />
           </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
               <Link
                 to="/"
@@ -114,6 +114,8 @@ export default function Navbar() {
               >
                 {t("contact")}
               </Link>
+              <LanguageSelector/>
+              <ThemeToggle />
             </div>
           </div>
         )}

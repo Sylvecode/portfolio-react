@@ -11,7 +11,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Sylvain Périé. {t("rights")}.
           </p>
         </div>
-        <div className="flex justify-center space-x-6">
+        <div className="flex flex-wrap items-center justify-center space-x-6">
           <a
             target="_blank"
             href="https://github.com/Sylvecode"
