@@ -1,3 +1,30 @@
+# 🚀 Commandes Docker essentielles
+
+## 📌 1. Construire et exécuter une image
+
+### **Construire une image à partir du `Dockerfile`**
+
+docker build -t <image-name> .
+
+Lancer un conteneur basé sur cette image : docker run -d --name <image-name> -p 5173:5173 <image-name>
+
+📌 2. Gestion des conteneurs
+
+Lister les conteneurs actifs : docker ps
+Arrêter un conteneur : docker stop <container-name>
+Relancer un conteneur arrêté : docker start <container-name>
+Supprimer un conteneur : docker rm <container-name>
+
+📌 3. Gestion des images
+
+Lister les images disponibles : docker images
+Supprimer une image : docker rmi <image-name>
+
+📌 4. Debug et accès au conteneur
+
+Voir les logs d’un conteneur : docker logs <container-name>
+Accéder au terminal d’un conteneur : docker exec -it <container-name> powershell
+
 Commandes essentielles avec Docker Compose
 
 Démarrer les conteneurs
