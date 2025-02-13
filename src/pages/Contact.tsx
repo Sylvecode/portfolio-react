@@ -23,11 +23,11 @@ export default function Contact() {
       );
 
       if (result.text === "OK") {
-        toast.success(t("sendEmailStatus")[0]);
+        toast.success(t("sendEmailSuccess"));
         formRef.current.reset();
       }
     } catch (error) {
-      toast.error(t("sendEmailStatus")[1]);
+      toast.error(t("sendEmailError"));
       console.error("EmailJS Error:", error);
     }
   };
@@ -69,7 +69,7 @@ export default function Contact() {
                   htmlFor="user_name"
                   className="block text-sm font-medium text-gray-700 dark:text-gray-100"
                 >
-                  {t("contactFormInfo")[0]}
+                  {t("contactFormName")}
                 </label>
                 <input
                   type="text"
@@ -85,7 +85,7 @@ export default function Contact() {
                   htmlFor="user_email"
                   className="block text-sm font-medium text-gray-700 dark:text-gray-100"
                 >
-                  {t("contactFormInfo")[1]}
+                  {t("contactFormEmail")}
                 </label>
                 <input
                   type="email"
@@ -101,7 +101,7 @@ export default function Contact() {
                   htmlFor="user_subject"
                   className="block text-sm font-medium text-gray-700 dark:text-gray-100"
                 >
-                  {t("contactFormInfo")[2]}
+                  {t("contactFormSubject")}
                 </label>
                 <input
                   type="text"
@@ -116,7 +116,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 dark:text-gray-100"
                 >
-                  {t("contactFormInfo")[3]}
+                  {t("contactFormMessage")}
                 </label>
                 <textarea
                   name="message"
