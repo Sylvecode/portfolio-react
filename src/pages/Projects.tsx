@@ -42,7 +42,7 @@ export default function Projects() {
         },
       ],
       githubUrl: "https://github.com/Sylvecode/PixhubAndroid",
-      liveUrl: "#",
+      liveUrl: "",
       details: "/pixhub",
     },
     {
@@ -68,7 +68,7 @@ export default function Projects() {
         },
       ],
       githubUrl: "https://github.com/Sylvecode/FootPassion",
-      liveUrl: "#",
+      liveUrl: "",
       details: "/footpassion",
     },
     {
@@ -115,7 +115,7 @@ export default function Projects() {
           name: "Firebase",
         },
       ],
-      githubUrl: "#",
+      githubUrl: "",
       liveUrl: "https://frequencies.fr/",
       details: "/frequencies",
     },
@@ -149,7 +149,7 @@ export default function Projects() {
         },
       ],
       githubUrl: "https://github.com/Sylvecode/PokeCodes",
-      liveUrl: "#",
+      liveUrl: "",
       details: "/pokecodes",
     },
   ];
