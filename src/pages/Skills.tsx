@@ -9,13 +9,14 @@ import {
   FaBootstrap,
   FaGitAlt,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 import {
   SiKotlin,
   SiTailwindcss,
-  SiPhp,
-  SiLaravel,
   SiJetpackcompose,
+  SiExpress,
+  SiSequelize,
 } from "react-icons/si";
 import { BiLogoSpringBoot, BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
@@ -37,11 +38,11 @@ export default function Skills() {
           name: "JavaScript",
           logo: <FaJs className="w-7 h-7 text-yellow-500" />,
         },
-        { name: "React", logo: <FaReact className="w-8 h-8 text-blue-600" /> },
         {
           name: "Typescript",
           logo: <BiLogoTypescript className="w-8 h-8 text-blue-600" />,
         },
+        { name: "React", logo: <FaReact className="w-8 h-8 text-blue-600" /> },
         {
           name: "Kotlin",
           logo: <SiKotlin className="w-6 h-6 text-purple-600" />,
@@ -68,10 +69,17 @@ export default function Skills() {
       title: "Backend Development",
       icon: <Server className="w-8 h-8 text-indigo-600" />,
       skills: [
-        { name: "PHP", logo: <SiPhp className="w-9 h-9 text-indigo-600" /> },
         {
-          name: "Laravel",
-          logo: <SiLaravel className="w-8 h-8 text-red-600" />,
+          name: "NodeJS",
+          logo: <FaNodeJs className="w-8 h-8 text-green-500" />,
+        },
+        {
+          name: "Express",
+          logo: <SiExpress className="w-8 h-8 text-blue-600" />,
+        },
+        {
+          name: "Sequelize",
+          logo: <SiSequelize className="w-8 h-8 text-blue-500" />,
         },
         {
           name: "Spring Boot",
