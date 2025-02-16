@@ -27,7 +27,7 @@ export default function Skills() {
   const { t } = useLanguage();
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: t("frontendDev"),
       icon: <Layout className="w-8 h-8 text-indigo-600" />,
       skills: [
         {
@@ -67,7 +67,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Backend Development",
+      title: t("backendDev"),
       icon: <Server className="w-8 h-8 text-indigo-600" />,
       skills: [
         {
@@ -93,7 +93,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Database",
+      title: t("dataBase"),
       icon: <Database className="w-8 h-8 text-indigo-600" />,
       skills: [
         { name: "MySQL", logo: <GrMysql className="w-8 h-8 text-blue-600" /> },
@@ -101,7 +101,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Other Skills",
+      title: t("otherSkills"),
       icon: <Code2 className="w-8 h-8 text-indigo-600" />,
       skills: [
         { name: "Git", logo: <FaGitAlt className="w-8 h-8 text-orange-600" /> },
