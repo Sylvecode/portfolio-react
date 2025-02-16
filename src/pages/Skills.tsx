@@ -17,6 +17,7 @@ import {
   SiJetpackcompose,
   SiExpress,
   SiSequelize,
+  SiMariadbfoundation,
 } from "react-icons/si";
 import { BiLogoSpringBoot, BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
@@ -96,6 +97,7 @@ export default function Skills() {
       icon: <Database className="w-8 h-8 text-indigo-600" />,
       skills: [
         { name: "MySQL", logo: <GrMysql className="w-8 h-8 text-blue-600" /> },
+        { name: "MariaDB", logo: <SiMariadbfoundation className="w-9 h-9 text-blue-600" /> },
       ],
     },
     {
