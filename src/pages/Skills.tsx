@@ -6,7 +6,6 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaBootstrap,
   FaGitAlt,
   FaFigma,
   FaNodeJs,
@@ -53,10 +52,6 @@ export default function Skills() {
           logo: <SiJetpackcompose className="w-6 h-6 text-purple-600" />,
         },
         {
-          name: "Bootstrap",
-          logo: <FaBootstrap className="w-8 h-8 text-purple-600" />,
-        },
-        {
           name: "Tailwind CSS",
           logo: <SiTailwindcss className="w-8 h-8 text-blue-500" />,
         },
@@ -97,7 +92,10 @@ export default function Skills() {
       icon: <Database className="w-8 h-8 text-indigo-600" />,
       skills: [
         { name: "MySQL", logo: <GrMysql className="w-8 h-8 text-blue-600" /> },
-        { name: "MariaDB", logo: <SiMariadbfoundation className="w-9 h-9 text-blue-600" /> },
+        {
+          name: "MariaDB",
+          logo: <SiMariadbfoundation className="w-9 h-9 text-blue-600" />,
+        },
       ],
     },
     {
@@ -139,7 +137,11 @@ export default function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="flex items-center gap-2 px-4 py-2 text-indigo-600 rounded-full text-sm font-medium"
+                    className="flex items-center gap-2 px-4 py-2 text-indigo-600 rounded-full text-sm font-medium animate-fade-in"
+                    style={{
+                      animationDelay: `${skillIndex * 100}ms`,
+                      opacity: 0,
+                    }}
                   >
                     {skill.logo}
                     <span className="text-black dark:text-white">
