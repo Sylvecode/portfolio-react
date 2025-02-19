@@ -62,7 +62,7 @@ const translations = {
     contactFormMessage: 'Message',
     sendEmailSuccess: 'Message sent successfully!',
     sendEmailError: 'Failed to send message. Please try again.',
-    details: 'Details',
+    details: 'Learn more',
     backtoprojects: 'Back to Projects',
     pixhubDescription:'Android App providing a Movie, Series, Video games release Calendar',
     footpassionDescription:'Football Match Management Mobile App',
