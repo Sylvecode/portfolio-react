@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -37,6 +38,7 @@ function App() {
             <Route path="/pokecodes" element={<PokeCodes />} />
           </Routes>
           <Footer />
+          <Analytics />
         </div>
       </ThemeProvider>
     </LanguageProvider>
