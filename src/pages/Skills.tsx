@@ -11,14 +11,12 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import {
-  SiKotlin,
   SiTailwindcss,
-  SiJetpackcompose,
   SiExpress,
   SiSequelize,
   SiMariadbfoundation,
 } from "react-icons/si";
-import { BiLogoSpringBoot, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { RxLoop } from "react-icons/rx";
 
@@ -38,18 +36,10 @@ export default function Skills() {
           name: "JavaScript",
           logo: <FaJs className="w-7 h-7 text-yellow-500" />,
         },
+        { name: "React", logo: <FaReact className="w-8 h-8 text-blue-600" /> },
         {
           name: "Typescript",
           logo: <BiLogoTypescript className="w-8 h-8 text-blue-600" />,
-        },
-        { name: "React", logo: <FaReact className="w-8 h-8 text-blue-600" /> },
-        {
-          name: "Kotlin",
-          logo: <SiKotlin className="w-6 h-6 text-purple-600" />,
-        },
-        {
-          name: "Jetpack Compose",
-          logo: <SiJetpackcompose className="w-6 h-6 text-purple-600" />,
         },
         {
           name: "Tailwind CSS",
@@ -76,10 +66,6 @@ export default function Skills() {
         {
           name: "Sequelize",
           logo: <SiSequelize className="w-8 h-8 text-blue-500" />,
-        },
-        {
-          name: "Spring Boot",
-          logo: <BiLogoSpringBoot className="w-8 h-8 text-green-600" />,
         },
         {
           name: "RESTful APIs",
